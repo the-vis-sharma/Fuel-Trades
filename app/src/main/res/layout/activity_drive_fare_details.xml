@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_grey"
+    tools:context="com.skylark.tripadviser.DriveFareDetails">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="16dp">
+        <RelativeLayout
+            android:id="@+id/driveFareLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/routeTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Distance"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/routeTitle1"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvTotalDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/routeTitle1"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel Required"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvTotalDistance"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvFuelRequired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvTotalDistance"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel Cost"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvFuelRequired"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvFuelCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvFuelRequired"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. of Tolls"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvFuelCost"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvNoOfTolls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvFuelCost"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toll Cost"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvNoOfTolls"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvTollCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tvNoOfTolls"
+                android:layout_alignParentRight="true"/>
+
+            <View
+                android:id="@+id/lineBottom"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@+id/tvTollCost"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Drive Cost"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/lineBottom"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvTotalDriveCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/lineBottom"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/processBarLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

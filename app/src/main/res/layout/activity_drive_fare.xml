@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/light_grey"
+    tools:context="com.skylark.tripadviser.DriveFareActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:contentPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drive Fare Calculator"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Starting City"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <EditText
+                    android:id="@+id/etStartCity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select City"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_location_size"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Destination City"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <EditText
+                    android:id="@+id/etDestinationCity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select City"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_location_size"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intermidiate City"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <EditText
+                    android:id="@+id/etViaCity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select City"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_location_size"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vihecle Type"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <Spinner
+                    android:id="@+id/spVehicleType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:entries="@array/vehicle_type_list"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feul Type"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <RadioGroup
+                    android:id="@+id/rbgFuelType1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rbPetrol1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Petrol"
+                        android:checked="true"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbDiesel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diesel"
+                        android:layout_weight="1"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Average"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <EditText
+                    android:id="@+id/etAvg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vihecle Average"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drive Type"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"/>
+
+                <RadioGroup
+                    android:id="@+id/rbgDriveType1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbOneWay1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="One Way"
+                        android:checked="true"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbRoundTrip1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Round Trip"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnGetFare1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Fare"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

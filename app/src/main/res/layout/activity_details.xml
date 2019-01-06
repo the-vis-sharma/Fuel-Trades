@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/light_grey"
+    tools:context="com.skylark.tripadviser.DetailsActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/tvRequestId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request ID"
+                android:layout_below="@+id/title"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"/>
+
+            <TextView
+                android:id="@+id/tvRequestIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="##"
+                android:layout_below="@+id/title"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvTimeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Stamp"
+                android:layout_below="@+id/tvRequestIdValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvTimeStampValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dd/MM/yyyy HH:mm:ss"
+                android:layout_below="@+id/tvRequestIdValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:layout_below="@+id/tvTimeStampValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvAmountValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ ####/-"
+                android:layout_below="@+id/tvTimeStampValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:layout_below="@+id/tvAmountValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvAccountValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#############"
+                android:layout_below="@+id/tvAmountValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvReceiptNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receipt Number"
+                android:layout_below="@+id/tvAccountValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvReceiptNumberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="########"
+                android:layout_below="@+id/tvAccountValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvCmnts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:layout_below="@+id/tvReceiptNumber"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvCmntsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXXXXXXX"
+                android:layout_below="@+id/tvReceiptNumberValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_below="@+id/tvCmntsValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toStartOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvStatusValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:layout_below="@+id/tvCmntsValue"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toEndOf="@+id/center"
+                android:textColor="@android:color/black"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

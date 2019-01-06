@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/cardview_light_background">
+
+    <ImageView
+        android:id="@+id/icon_card"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_payment_black"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card No"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/icon_card"/>
+
+    <TextView
+        android:id="@+id/tvCardBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 0.00"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/tvCardNumber"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/tvCardCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tvCardNumber"
+        android:layout_toRightOf="@+id/icon_card"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        android:layout_toEndOf="@+id/icon_card"
+        android:layout_below="@id/icon_card"/>
+
+</RelativeLayout>

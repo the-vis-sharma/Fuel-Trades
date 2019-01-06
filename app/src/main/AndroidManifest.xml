@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skylark.tripadviser">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TollFareCalcActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FuelPriceActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".RequestMoneyActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SelectCity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FuelPriceDetails"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".TollPriceDetails"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyABhEEV6l375JaNsrqqklUwdznudMqMLCs" />
+
+        <activity
+            android:name=".DriveFareDetails"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".DriveFareActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".RefillCardActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AccountsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SupportActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ViewCardDetails"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ViewPendingMoneyRequest"
+            android:label="@string/title_activity_view_pending_money_request"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="809426dddc929996e7b2d02cde20fe66402f06c0" />
+
+        <activity android:name=".DetailsActivity" />
+        <activity
+            android:name=".ViewPendingRefillRequests"
+            android:label="@string/title_activity_view_pending_refill_requests1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewCashbackActivity"></activity>
+    </application>
+
+</manifest>

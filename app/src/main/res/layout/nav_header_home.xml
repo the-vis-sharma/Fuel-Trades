@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/bg_splash"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/ic_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/title"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvUserName"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/tvFuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel"
+            android:textColor="#e65303"
+            android:textStyle="bold"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tvTrades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Trades"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#4757b4"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vishnu Bochiwal"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:background="#59000000"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

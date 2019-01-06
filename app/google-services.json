@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "95264862221",
+    "firebase_url": "https://fuel-trades.firebaseio.com",
+    "project_id": "fuel-trades",
+    "storage_bucket": "fuel-trades.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95264862221:android:820d2681eabf6c08",
+        "android_client_info": {
+          "package_name": "com.skylark.tripadviser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95264862221-5b7slho4otg7m246i009g4lfuv9hsgii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skylark.tripadviser",
+            "certificate_hash": "7f66b7b1fd8d12c5b897d8537eae2051043fb5ca"
+          }
+        },
+        {
+          "client_id": "95264862221-pm22u9hncsk30c7tcoed4pgt1hht0lke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASm3PLx9p2Ih39T7P2umQmdglKvzSqkzM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95264862221-pm22u9hncsk30c7tcoed4pgt1hht0lke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

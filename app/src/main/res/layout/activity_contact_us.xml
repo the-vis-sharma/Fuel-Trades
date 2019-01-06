@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/light_grey"
+    tools:context="com.skylark.tripadviser.ContactUsActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvTopImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/logo"
+                android:contentDescription="Logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_image"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/tvFuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fuel"
+                    android:textColor="#e65303"
+                    android:textStyle="bold"
+                    android:textSize="32sp"/>
+
+                <TextView
+                    android:id="@+id/tvTrades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Trades"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#4757b4"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/cvTopImage">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_call"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:onClick="openDialer"
+                android:src="@drawable/ic_call_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 930 930 7416"
+                android:textSize="20sp"
+                android:onClick="openDialer"
+                android:layout_toRightOf="@+id/ic_call"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/cvMobile">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_email"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:onClick="openMail"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_email_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="trades.fuel@gmail.com"
+                android:textSize="20sp"
+                android:onClick="openMail"
+                android:layout_toRightOf="@+id/ic_email"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/cvEmail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_location"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_location_on_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="XXXXXXXXXXXXXX\nXXXXXXXXXXXXX\nXXXXXXXXXXXX\nJaipur"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/ic_location"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/btnLocateOnMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Locate On Map"
+                android:onClick="openMap"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

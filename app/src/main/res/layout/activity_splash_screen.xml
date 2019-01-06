@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context="com.skylark.tripadviser.SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/title"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/tvFuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel"
+            android:textColor="#e65303"
+            android:textStyle="bold"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tvTrades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Trades"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#4757b4"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By:"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/tvSkylarkTech"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvSkylarkTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skylark Tech"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
